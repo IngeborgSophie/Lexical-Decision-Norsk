@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="3.2.4">
+  <Settings>
+    <Param name="Audio latency priority" updates="None" val="use prefs" valType="str"/>
+    <Param name="Audio lib" updates="None" val="use prefs" valType="str"/>
+    <Param name="Completed URL" updates="None" val="" valType="str"/>
+    <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
+    <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
+    <Param name="Experiment info" updates="None" val="{'participant': '', 'session': '001', 'rekruttert av': ''}" valType="code"/>
+    <Param name="Force stereo" updates="None" val="False" valType="bool"/>
+    <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
+    <Param name="HTML path" updates="None" val="html" valType="str"/>
+    <Param name="Incomplete URL" updates="None" val="" valType="str"/>
+    <Param name="JS libs" updates="None" val="packaged" valType="str"/>
+    <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
+    <Param name="Save csv file" updates="None" val="False" valType="bool"/>
+    <Param name="Save excel file" updates="None" val="True" valType="bool"/>
+    <Param name="Save log file" updates="None" val="False" valType="bool"/>
+    <Param name="Save psydat file" updates="None" val="True" valType="bool"/>
+    <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
+    <Param name="Screen" updates="None" val="1" valType="num"/>
+    <Param name="Show info dlg" updates="None" val="True" valType="bool"/>
+    <Param name="Show mouse" updates="None" val="False" valType="bool"/>
+    <Param name="Units" updates="None" val="height" valType="str"/>
+    <Param name="Use version" updates="None" val="" valType="str"/>
+    <Param name="Window size (pixels)" updates="None" val="[1920, 1200]" valType="code"/>
+    <Param name="blendMode" updates="None" val="avg" valType="str"/>
+    <Param name="color" updates="None" val="$[0,0,0]" valType="str"/>
+    <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
+    <Param name="expName" updates="None" val="lexicaldecision" valType="str"/>
+    <Param name="exportHTML" updates="None" val="on Sync" valType="str"/>
+    <Param name="logging level" updates="None" val="exp" valType="code"/>
+  </Settings>
+  <Routines>
+    <Routine name="trial">
+      <TextComponent name="fixation">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="fixation" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="1" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="+" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="resp">
+        <Param name="allowedKeys" updates="set every repeat" val="'left','right'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="$corrAns" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="resp" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="1" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="True" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <TextComponent name="stimulus">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="stimulus" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="1" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$stim" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="arrow_keys">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="name" updates="None" val="arrow_keys" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -0.4)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="&lt;-- non-ord     ord --&gt;" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="intro">
+      <TextComponent name="introtekst">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="name" updates="None" val="introtekst" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.5" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="I denne oppgaven skal du avgjøre om det du ser på skjermen er et ord i norsk eller ikke.&amp;#10;Dersom du mener det du ser er et norsk ord, trykker du piltasten til høyre. &amp;#10;Dersom det du ser ikke er et ord, trykker du piltasten til venstre.&amp;#10;Prøv å svar så raskt du kan.&amp;#10;&amp;#10;Trykk mellomromstasten for å fortsette.&amp;#10;&amp;#10;Lykke til!" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp">
+        <Param name="allowedKeys" updates="constant" val="'left','right','space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.5" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="avslutning">
+      <TextComponent name="text">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="text" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.2" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="5.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Takk for innsatsen!" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="intro"/>
+    <LoopInitiator loopType="TrialHandler" name="trials">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('stim', 'Briller'), ('type', 'simplex'), ('corrAns', 'right'), ('info', 'HiIMG-HiPND')]), OrderedDict([('stim', 'Bøtte'), ('type', 'simplex'), ('corrAns', 'right'), ('info', 'HiIMG-HiPND')]), OrderedDict([('stim', 'Gate'), ('type', 'simplex'), ('corrAns', 'right'), ('info', 'HiIMG-HiPND')]), OrderedDict([('stim', 'Kjeller'), ('type', 'simplex'), ('corrAns', 'right'), ('info', 'HiIMG-HiPND')]), OrderedDict([('stim', 'Pose'), ('type', 'simplex'), ('corrAns', 'right'), ('info', 'HiIMG-HiPND')]), OrderedDict([('stim', 'Pære'), ('type', 'simplex'), ('corrAns', 'right'), ('info', 'HiIMG-HiPND')]), OrderedDict([('stim', 'Skole'), ('type', 'simplex'), ('corrAns', 'right'), ('info', 'HiIMG-HiPND')]), OrderedDict([('stim', 'Tønne'), ('type', 'simplex'), ('corrAns', 'right'), ('info', 'HiIMG-HiPND')]), OrderedDict([('stim', 'Flakse'), ('type', 'simplex'), ('corrAns', 'right'), ('info', 'HiIMG-LoPND')]), OrderedDict([('stim', 'Genser'), ('type', 'simplex'), ('corrAns', 'right'), ('info', 'HiIMG-LoPND')]), OrderedDict([('stim', 'Kråke'), ('type', 'simplex'), ('corrAns', 'right'), ('info', 'HiIMG-LoPND')]), OrderedDict([('stim', 'Kaffe'), ('type', 'simplex'), ('corrAns', 'right'), ('info', 'HiIMG-LoPND')]), OrderedDict([('stim', 'Pensel'), ('type', 'simplex'), ('corrAns', 'right'), ('info', 'HiIMG-LoPND')]), OrderedDict([('stim', 'Tavle'), ('type', 'simplex'), ('corrAns', 'right'), ('info', 'HiIMG-LoPND')]), OrderedDict([('stim', 'Tekstil'), ('type', 'simplex'), ('corrAns', 'right'), ('info', 'HiIMG-LoPND')]), OrderedDict([('stim', 'Truse'), ('type', 'simplex'), ('corrAns', 'right'), ('info', 'HiIMG-LoPND')]), OrderedDict([('stim', 'Gåte'), ('type', 'simplex'), ('corrAns', 'right'), ('info', 'LoIMG-HiPND')]), OrderedDict([('stim', 'Fure'), ('type', 'simplex'), ('corrAns', 'right'), ('info', 'LoIMG-HiPND')]), OrderedDict([('stim', 'Krise'), ('type', 'simplex'), ('corrAns', 'right'), ('info', 'LoIMG-HiPND')]), OrderedDict([('stim', 'Rolle'), ('type', 'simplex'), ('corrAns', 'right'), ('info', 'LoIMG-HiPND')]), OrderedDict([('stim', 'Måte'), ('type', 'simplex'), ('corrAns', 'right'), ('info', 'LoIMG-HiPND')]), OrderedDict([('stim', 'Tabbe'), ('type', 'simplex'), ('corrAns', 'right'), ('info', 'LoIMG-HiPND')]), OrderedDict([('stim', 'Tante'), ('type', 'simplex'), ('corrAns', 'right'), ('info', 'LoIMG-HiPND')]), OrderedDict([('stim', 'Type'), ('type', 'simplex'), ('corrAns', 'right'), ('info', 'LoIMG-HiPND')]), OrderedDict([('stim', 'Effekt'), ('type', 'simplex'), ('corrAns', 'right'), ('info', 'LoIMG-LoPND')]), OrderedDict([('stim', 'Fabel'), ('type', 'simplex'), ('corrAns', 'right'), ('info', 'LoIMG-LoPND')]), OrderedDict([('stim', 'Grøde'), ('type', 'simplex'), ('corrAns', 'right'), ('info', 'LoIMG-LoPND')]), OrderedDict([('stim', 'Kaos'), ('type', 'simplex'), ('corrAns', 'right'), ('info', 'LoIMG-LoPND')]), OrderedDict([('stim', 'Kilo'), ('type', 'simplex'), ('corrAns', 'right'), ('info', 'LoIMG-LoPND')]), OrderedDict([('stim', 'Rolle'), ('type', 'simplex'), ('corrAns', 'right'), ('info', 'LoIMG-LoPND')]), OrderedDict([('stim', 'Vilje'), ('type', 'simplex'), ('corrAns', 'right'), ('info', 'LoIMG-LoPND')]), OrderedDict([('stim', 'Yrke'), ('type', 'simplex'), ('corrAns', 'right'), ('info', 'LoIMG-LoPND')]), OrderedDict([('stim', 'Alfum'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Essekt'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Hetall'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Megrep'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Permon'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Sibron'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Sogme'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Tirat'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Blesse'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Fakmut'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Karke'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Midlem'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Rystem'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Simmer'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Spektes'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Trågge'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Bølde'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Fibbe'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Kjebbe'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Mineng'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Saffe'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Skete'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Stipe'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Vendu'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Datin'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Gaffi'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Kryse'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Pelter'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Sedrag'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Skobe'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Strote'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Vitor'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Akebrett'), ('type', 'compound'), ('corrAns', 'right'), ('info', 'HiIMG-LoPND')]), OrderedDict([('stim', 'Blomkål'), ('type', 'compound'), ('corrAns', 'right'), ('info', 'HiIMG-LoPND')]), OrderedDict([('stim', 'Godvenner'), ('type', 'compound'), ('corrAns', 'right'), ('info', 'HiIMG-LoPND')]), OrderedDict([('stim', 'Overtro'), ('type', 'compound'), ('corrAns', 'right'), ('info', 'HiIMG-LoPND')]), OrderedDict([('stim', 'Syltetøy'), ('type', 'compound'), ('corrAns', 'right'), ('info', 'HiIMG-LoPND')]), OrderedDict([('stim', 'Utkikk'), ('type', 'compound'), ('corrAns', 'right'), ('info', 'LoIMG-LoPND')]), OrderedDict([('stim', 'Vedtak'), ('type', 'compound'), ('corrAns', 'right'), ('info', 'LoIMG-LoPND')]), OrderedDict([('stim', 'Utsnitt'), ('type', 'compound'), ('corrAns', 'right'), ('info', 'LoIMG-LoPND')]), OrderedDict([('stim', 'Øyeblikk'), ('type', 'compound'), ('corrAns', 'right'), ('info', 'LoIMG-LoPND')]), OrderedDict([('stim', 'Tilgang'), ('type', 'compound'), ('corrAns', 'right'), ('info', 'LoIMG-LoPND')]), OrderedDict([('stim', 'Trukksel'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Bålesome'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Klofet'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Buelokk'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'halldytt'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Mannfast'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Rosetan'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Mørkung'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Romakt'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')]), OrderedDict([('stim', 'Hallus'), ('type', 'non'), ('corrAns', 'left'), ('info', 'nonword')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="experimental_trials.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="trials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="trial"/>
+    <LoopTerminator name="trials"/>
+    <Routine name="avslutning"/>
+  </Flow>
+</PsychoPy2experiment>
